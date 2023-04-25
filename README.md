@@ -1,16 +1,15 @@
 # OverTheWire-Wargames : All Level Walkthroughs
 
-1. Online
-2. Bandit
-3. Natas
-4. Leviathan
-5. Krypton
-6. Narnia
-7. Behemoth
-8. Utumno
-9. Maze
-10. Vortex
-12. Manpage
-13. Drifter
-14. FormulaOne
+1. Bandit
+2. Natas
+3. Leviathan
+4. Krypton
+5. Narnia
+6. Behemoth
+7. Utumno
+8. Maze
+9. Vortex
+10. Manpage
+11. Drifter
+12. FormulaOne
 
