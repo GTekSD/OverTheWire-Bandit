@@ -14,7 +14,7 @@ The goal of this level is for you to log into the game using SSH. The host to wh
                       This is an OverTheWire game server. 
             More information on http://www.overthewire.org/wargames
 
-bandit0@bandit.labs.overthewire.org's password: 
+bandit0@bandit.labs.overthewire.org's password: bandit0
 
       ,----..            ,----,          .---.
      /   /   \         ,/   .`|         /. ./|
@@ -103,3 +103,112 @@ discord or IRC.
 bandit0@bandit:~$ 
 
 ```
+
+### Bandit Level 0 → Level 1
+
+The password for the next level is stored in a file called readme located in the home directory. Use this password to log into bandit1 using SSH. Whenever you find a password for a level, use SSH (on port 2220) to log into that level and continue the game.
+```
+bandit0@bandit:~$ pwd
+/home/bandit0
+bandit0@bandit:~$ ls
+readme
+bandit0@bandit:~$ cat readme 
+NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL
+bandit0@bandit:~$ exit
+logout
+Connection to bandit.labs.overthewire.org closed.
+```
+
+### Bandit Level 1 → Level 2
+
+The password for the next level is stored in a file called - located in the home directory
+```
+┌──(kali㉿kali)-[~]
+└─$ ssh bandit1@bandit.labs.overthewire.org -p 2220
+                         _                     _ _ _   
+                        | |__   __ _ _ __   __| (_) |_ 
+                        | '_ \ / _` | '_ \ / _` | | __|
+                        | |_) | (_| | | | | (_| | | |_ 
+                        |_.__/ \__,_|_| |_|\__,_|_|\__|
+                                                       
+
+                      This is an OverTheWire game server. 
+            More information on http://www.overthewire.org/wargames
+
+bandit1@bandit.labs.overthewire.org's password: NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL
+
+bandit1@bandit:~$ 
+bandit1@bandit:~$ ls
+-
+bandit1@bandit:~$ pwd
+/home/bandit1
+bandit1@bandit:~$ cat /home/bandit1/- 
+rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi
+bandit1@bandit:~$ exit
+logout
+Connection to bandit.labs.overthewire.org closed.
+```
+
+### Bandit Level 3 → Level 4
+
+The password for the next level is stored in a file called spaces in this filename located in the home directory
+```
+┌──(kali㉿kali)-[~]
+└─$ ssh bandit2@bandit.labs.overthewire.org -p 2220
+                         _                     _ _ _   
+                        | |__   __ _ _ __   __| (_) |_ 
+                        | '_ \ / _` | '_ \ / _` | | __|
+                        | |_) | (_| | | | | (_| | | |_ 
+                        |_.__/ \__,_|_| |_|\__,_|_|\__|
+                                                       
+
+                      This is an OverTheWire game server. 
+            More information on http://www.overthewire.org/wargames
+
+bandit2@bandit.labs.overthewire.org's password: rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi
+bandit2@bandit:~$ 
+bandit2@bandit:~$ ls
+spaces in this filename
+bandit2@bandit:~$ cat spaces\ in\ this\ filename 
+aBZ0W5EmUfAf7kHTQeOwd8bauFJ2lAiG
+bandit2@bandit:~$ exit
+logout
+Connection to bandit.labs.overthewire.org closed.
+```
+
+### Bandit Level 4 → Level 5
+
+The password for the next level is stored in a hidden file in the inhere directory.
+```
+```
+
+### Bandit Level 5 → Level 6
+
+
+```
+```
+
+### Bandit Level 6 → Level 7
+
+
+```
+```
+
+### Bandit Level 7 → Level 8
+
+
+```
+```
+
+### Bandit Level 8 → Level 9
+
+
+```
+```
+
+### Bandit Level 9 → Level 10
+
+
+```
+```
+
