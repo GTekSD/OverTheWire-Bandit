@@ -17,7 +17,7 @@
 
 ### Wargames : All Level Walkthroughs
 
-1. [Bandit](#Bandit.md)
+1. [Bandit](#/Bandit.md)
 2. Natas
 3. Leviathan
 4. Krypton
