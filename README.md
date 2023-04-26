@@ -18,17 +18,17 @@
 ### Wargames : All Level Walkthroughs
 
 1. [Bandit](Bandit.md)
-2. Natas
-3. Leviathan
-4. Krypton
-5. Narnia
-6. Behemoth
-7. Utumno
-8. Maze
-9. Vortex
-10. Manpage
-11. Drifter
-12. FormulaOne
+2. [Natas](Natas.md)
+3. [Leviathan](Leviathan.md)
+4. [Krypton](Krypton.md)
+5. [Narnia](Narnia.md)
+6. [Behemoth](Behemoth.md)
+7. [Utumno](Utumno.md)
+8. [Maze](Maze.md)
+9. [Vortex](Vortex.md)
+10. [Manpage](Manpage.md)
+11. [Drifter](Drifter.md)
+12. [FormulaOne](FormulaOne.md)
 
 _If you find any problems, please report them to the #wargames channel on discord or IRC._
 
