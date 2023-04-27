@@ -125,15 +125,6 @@ The password for the next level is stored in a file called - located in the home
 ```
 ┌──(kali㉿kali)-[~]
 └─$ ssh bandit1@bandit.labs.overthewire.org -p 2220
-                         _                     _ _ _   
-                        | |__   __ _ _ __   __| (_) |_ 
-                        | '_ \ / _` | '_ \ / _` | | __|
-                        | |_) | (_| | | | | (_| | | |_ 
-                        |_.__/ \__,_|_| |_|\__,_|_|\__|
-                                                       
-
-                      This is an OverTheWire game server. 
-            More information on http://www.overthewire.org/wargames
 
 bandit1@bandit.labs.overthewire.org's password: NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL
 
@@ -155,15 +146,6 @@ The password for the next level is stored in a file called spaces in this filena
 ```
 ┌──(kali㉿kali)-[~]
 └─$ ssh bandit2@bandit.labs.overthewire.org -p 2220
-                         _                     _ _ _   
-                        | |__   __ _ _ __   __| (_) |_ 
-                        | '_ \ / _` | '_ \ / _` | | __|
-                        | |_) | (_| | | | | (_| | | |_ 
-                        |_.__/ \__,_|_| |_|\__,_|_|\__|
-                                                       
-
-                      This is an OverTheWire game server. 
-            More information on http://www.overthewire.org/wargames
 
 bandit2@bandit.labs.overthewire.org's password: rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi
 bandit2@bandit:~$ 
@@ -182,15 +164,6 @@ The password for the next level is stored in a hidden file in the inhere directo
 ```
 ┌──(kali㉿kali)-[~]
 └─$ ssh bandit3@bandit.labs.overthewire.org -p 2220
-                         _                     _ _ _   
-                        | |__   __ _ _ __   __| (_) |_ 
-                        | '_ \ / _` | '_ \ / _` | | __|
-                        | |_) | (_| | | | | (_| | | |_ 
-                        |_.__/ \__,_|_| |_|\__,_|_|\__|
-                                                       
-
-                      This is an OverTheWire game server. 
-            More information on http://www.overthewire.org/wargames
 
 bandit3@bandit.labs.overthewire.org's password: aBZ0W5EmUfAf7kHTQeOwd8bauFJ2lAiG
 
@@ -210,15 +183,6 @@ The password for the next level is stored in the only human-readable file in the
 ```
 ┌──(kali㉿kali)-[~]
 └─$ ssh bandit4@bandit.labs.overthewire.org -p 2220
-                         _                     _ _ _   
-                        | |__   __ _ _ __   __| (_) |_ 
-                        | '_ \ / _` | '_ \ / _` | | __|
-                        | |_) | (_| | | | | (_| | | |_ 
-                        |_.__/ \__,_|_| |_|\__,_|_|\__|
-                                                       
-
-                      This is an OverTheWire game server. 
-            More information on http://www.overthewire.org/wargames
 
 bandit4@bandit.labs.overthewire.org's password: 2EW7BBsr6aMMoJ2HjW067dm8EgX26xNe
 bandit4@bandit:~$ ls
@@ -226,12 +190,12 @@ inhere
 bandit4@bandit:~$ ls inhere/
 -file00  -file01  -file02  -file03  -file04  -file05  -file06  -file07  -file08  -file09
 bandit4@bandit:~$ cat inhere/-file*
-�Ű��Bη���b<Q�Ƞ�+V�iO�1�[5{�jmD�B�0D�tQ*��)�A���V �]Ȕl�x(��z��.T26 F8qqlY���v�FN#��'~�E�Q�"�p�
-����4�}�]��G�A��u[�/9��Mrj�S�r_E�,�����G+�h|�+
-�=>KQ�2��]o-p8q�츑���D�
-                       .~��&ϯ"PT�I'�cwk^j�������M����;,���co�9lrIWWI6bB37kxfiCQZqUdOIYfr6eEeqR
-�׉ǰ�6=�>>�ӫ�w�<U'=�@��Z�xj�?3��[ٲN|?�G|b�G�[8�y�-�*�
-                                                    ��
+ Ű  Bη   b<Q Ƞ +V iO 1 [5{ jmD B 0D tQ*  ) A   V  ]Ȕl x(  z  .T26 F8qqlY   v FN#  '~ E Q " p 
+    4 } ]  G A  u[ /9  Mrj S r_E ,     G+ h| +
+ =>KQ 2  ]o-p8q 츑   D 
+                       .~  &ϯ"PT I' cwk^j       M    ;,   co 9lrIWWI6bB37kxfiCQZqUdOIYfr6eEeqR
+ ׉ǰ 6= >> ӫ w <U'= @  Z xj ?3  [ٲN|? G|b G [8 y - * 
+                                                      
                                                       bandit4@bandit:~$ 
 bandit4@bandit:~$ cat inhere/-file07
 lrIWWI6bB37kxfiCQZqUdOIYfr6eEeqR
@@ -251,15 +215,6 @@ not executable
 ```
 ┌──(kali㉿kali)-[~]
 └─$ ssh bandit5@bandit.labs.overthewire.org -p 2220
-                         _                     _ _ _   
-                        | |__   __ _ _ __   __| (_) |_ 
-                        | '_ \ / _` | '_ \ / _` | | __|
-                        | |_) | (_| | | | | (_| | | |_ 
-                        |_.__/ \__,_|_| |_|\__,_|_|\__|
-                                                       
-
-                      This is an OverTheWire game server. 
-            More information on http://www.overthewire.org/wargames
 
 bandit5@bandit.labs.overthewire.org's password: lrIWWI6bB37kxfiCQZqUdOIYfr6eEeqR
 
@@ -308,15 +263,6 @@ owned by group bandit6
 ```
 ┌──(kali㉿kali)-[~]
 └─$ ssh bandit6@bandit.labs.overthewire.org -p 2220
-                         _                     _ _ _   
-                        | |__   __ _ _ __   __| (_) |_ 
-                        | '_ \ / _` | '_ \ / _` | | __|
-                        | |_) | (_| | | | | (_| | | |_ 
-                        |_.__/ \__,_|_| |_|\__,_|_|\__|
-                                                       
-
-                      This is an OverTheWire game server. 
-            More information on http://www.overthewire.org/wargames
 
 bandit6@bandit.labs.overthewire.org's password: P4L4vucdmLnm8I7Vl7jG1ApGSfjYKqJU
 
@@ -329,15 +275,6 @@ The password for the next level is stored in the file data.txt next to the word 
 ```
 ┌──(kali㉿kali)-[~]
 └─$ ssh bandit4@bandit.labs.overthewire.org -p 2220
-                         _                     _ _ _   
-                        | |__   __ _ _ __   __| (_) |_ 
-                        | '_ \ / _` | '_ \ / _` | | __|
-                        | |_) | (_| | | | | (_| | | |_ 
-                        |_.__/ \__,_|_| |_|\__,_|_|\__|
-                                                       
-
-                      This is an OverTheWire game server. 
-            More information on http://www.overthewire.org/wargames
 
 bandit4@bandit.labs.overthewire.org's password: 
 
@@ -349,15 +286,6 @@ The password for the next level is stored in the file data.txt and is the only l
 ```
 ┌──(kali㉿kali)-[~]
 └─$ ssh bandit4@bandit.labs.overthewire.org -p 2220
-                         _                     _ _ _   
-                        | |__   __ _ _ __   __| (_) |_ 
-                        | '_ \ / _` | '_ \ / _` | | __|
-                        | |_) | (_| | | | | (_| | | |_ 
-                        |_.__/ \__,_|_| |_|\__,_|_|\__|
-                                                       
-
-                      This is an OverTheWire game server. 
-            More information on http://www.overthewire.org/wargames
 
 bandit4@bandit.labs.overthewire.org's password: 
 
@@ -369,15 +297,6 @@ The password for the next level is stored in the file data.txt in one of the few
 ```
 ┌──(kali㉿kali)-[~]
 └─$ ssh bandit4@bandit.labs.overthewire.org -p 2220
-                         _                     _ _ _   
-                        | |__   __ _ _ __   __| (_) |_ 
-                        | '_ \ / _` | '_ \ / _` | | __|
-                        | |_) | (_| | | | | (_| | | |_ 
-                        |_.__/ \__,_|_| |_|\__,_|_|\__|
-                                                       
-
-                      This is an OverTheWire game server. 
-            More information on http://www.overthewire.org/wargames
 
 bandit4@bandit.labs.overthewire.org's password: 
 
@@ -389,15 +308,6 @@ The password for the next level is stored in the file data.txt, which contains b
 ```
 ┌──(kali㉿kali)-[~]
 └─$ ssh bandit4@bandit.labs.overthewire.org -p 2220
-                         _                     _ _ _   
-                        | |__   __ _ _ __   __| (_) |_ 
-                        | '_ \ / _` | '_ \ / _` | | __|
-                        | |_) | (_| | | | | (_| | | |_ 
-                        |_.__/ \__,_|_| |_|\__,_|_|\__|
-                                                       
-
-                      This is an OverTheWire game server. 
-            More information on http://www.overthewire.org/wargames
 
 bandit4@bandit.labs.overthewire.org's password: 
 
@@ -409,15 +319,6 @@ The password for the next level is stored in the file data.txt, where all lowerc
 ```
 ┌──(kali㉿kali)-[~]
 └─$ ssh bandit4@bandit.labs.overthewire.org -p 2220
-                         _                     _ _ _   
-                        | |__   __ _ _ __   __| (_) |_ 
-                        | '_ \ / _` | '_ \ / _` | | __|
-                        | |_) | (_| | | | | (_| | | |_ 
-                        |_.__/ \__,_|_| |_|\__,_|_|\__|
-                                                       
-
-                      This is an OverTheWire game server. 
-            More information on http://www.overthewire.org/wargames
 
 bandit4@bandit.labs.overthewire.org's password: 
 
@@ -429,15 +330,6 @@ The password for the next level is stored in the file data.txt, which is a hexdu
 ```
 ┌──(kali㉿kali)-[~]
 └─$ ssh bandit4@bandit.labs.overthewire.org -p 2220
-                         _                     _ _ _   
-                        | |__   __ _ _ __   __| (_) |_ 
-                        | '_ \ / _` | '_ \ / _` | | __|
-                        | |_) | (_| | | | | (_| | | |_ 
-                        |_.__/ \__,_|_| |_|\__,_|_|\__|
-                                                       
-
-                      This is an OverTheWire game server. 
-            More information on http://www.overthewire.org/wargames
 
 bandit4@bandit.labs.overthewire.org's password: 
 
@@ -449,15 +341,6 @@ The password for the next level is stored in /etc/bandit_pass/bandit14 and can o
 ```
 ┌──(kali㉿kali)-[~]
 └─$ ssh bandit4@bandit.labs.overthewire.org -p 2220
-                         _                     _ _ _   
-                        | |__   __ _ _ __   __| (_) |_ 
-                        | '_ \ / _` | '_ \ / _` | | __|
-                        | |_) | (_| | | | | (_| | | |_ 
-                        |_.__/ \__,_|_| |_|\__,_|_|\__|
-                                                       
-
-                      This is an OverTheWire game server. 
-            More information on http://www.overthewire.org/wargames
 
 bandit4@bandit.labs.overthewire.org's password: 
 
@@ -469,15 +352,6 @@ The password for the next level can be retrieved by submitting the password of t
 ```
 ┌──(kali㉿kali)-[~]
 └─$ ssh bandit4@bandit.labs.overthewire.org -p 2220
-                         _                     _ _ _   
-                        | |__   __ _ _ __   __| (_) |_ 
-                        | '_ \ / _` | '_ \ / _` | | __|
-                        | |_) | (_| | | | | (_| | | |_ 
-                        |_.__/ \__,_|_| |_|\__,_|_|\__|
-                                                       
-
-                      This is an OverTheWire game server. 
-            More information on http://www.overthewire.org/wargames
 
 bandit4@bandit.labs.overthewire.org's password: 
 
@@ -491,15 +365,6 @@ Helpful note: Getting “HEARTBEATING” and “Read R BLOCK”? Use -ign_eof an
 ```
 ┌──(kali㉿kali)-[~]
 └─$ ssh bandit4@bandit.labs.overthewire.org -p 2220
-                         _                     _ _ _   
-                        | |__   __ _ _ __   __| (_) |_ 
-                        | '_ \ / _` | '_ \ / _` | | __|
-                        | |_) | (_| | | | | (_| | | |_ 
-                        |_.__/ \__,_|_| |_|\__,_|_|\__|
-                                                       
-
-                      This is an OverTheWire game server. 
-            More information on http://www.overthewire.org/wargames
 
 bandit4@bandit.labs.overthewire.org's password: 
 
@@ -511,15 +376,6 @@ The credentials for the next level can be retrieved by submitting the password o
 ```
 ┌──(kali㉿kali)-[~]
 └─$ ssh bandit4@bandit.labs.overthewire.org -p 2220
-                         _                     _ _ _   
-                        | |__   __ _ _ __   __| (_) |_ 
-                        | '_ \ / _` | '_ \ / _` | | __|
-                        | |_) | (_| | | | | (_| | | |_ 
-                        |_.__/ \__,_|_| |_|\__,_|_|\__|
-                                                       
-
-                      This is an OverTheWire game server. 
-            More information on http://www.overthewire.org/wargames
 
 bandit4@bandit.labs.overthewire.org's password: 
 
@@ -533,15 +389,6 @@ NOTE: if you have solved this level and see ‘Byebye!’ when trying to log int
 ```
 ┌──(kali㉿kali)-[~]
 └─$ ssh bandit4@bandit.labs.overthewire.org -p 2220
-                         _                     _ _ _   
-                        | |__   __ _ _ __   __| (_) |_ 
-                        | '_ \ / _` | '_ \ / _` | | __|
-                        | |_) | (_| | | | | (_| | | |_ 
-                        |_.__/ \__,_|_| |_|\__,_|_|\__|
-                                                       
-
-                      This is an OverTheWire game server. 
-            More information on http://www.overthewire.org/wargames
 
 bandit4@bandit.labs.overthewire.org's password: 
 
@@ -553,15 +400,6 @@ The password for the next level is stored in a file readme in the homedirectory.
 ```
 ┌──(kali㉿kali)-[~]
 └─$ ssh bandit4@bandit.labs.overthewire.org -p 2220
-                         _                     _ _ _   
-                        | |__   __ _ _ __   __| (_) |_ 
-                        | '_ \ / _` | '_ \ / _` | | __|
-                        | |_) | (_| | | | | (_| | | |_ 
-                        |_.__/ \__,_|_| |_|\__,_|_|\__|
-                                                       
-
-                      This is an OverTheWire game server. 
-            More information on http://www.overthewire.org/wargames
 
 bandit4@bandit.labs.overthewire.org's password: 
 
@@ -573,15 +411,6 @@ To gain access to the next level, you should use the setuid binary in the homedi
 ```
 ┌──(kali㉿kali)-[~]
 └─$ ssh bandit4@bandit.labs.overthewire.org -p 2220
-                         _                     _ _ _   
-                        | |__   __ _ _ __   __| (_) |_ 
-                        | '_ \ / _` | '_ \ / _` | | __|
-                        | |_) | (_| | | | | (_| | | |_ 
-                        |_.__/ \__,_|_| |_|\__,_|_|\__|
-                                                       
-
-                      This is an OverTheWire game server. 
-            More information on http://www.overthewire.org/wargames
 
 bandit4@bandit.labs.overthewire.org's password: 
 
@@ -595,15 +424,6 @@ NOTE: Try connecting to your own network daemon to see if it works as you think
 ```
 ┌──(kali㉿kali)-[~]
 └─$ ssh bandit4@bandit.labs.overthewire.org -p 2220
-                         _                     _ _ _   
-                        | |__   __ _ _ __   __| (_) |_ 
-                        | '_ \ / _` | '_ \ / _` | | __|
-                        | |_) | (_| | | | | (_| | | |_ 
-                        |_.__/ \__,_|_| |_|\__,_|_|\__|
-                                                       
-
-                      This is an OverTheWire game server. 
-            More information on http://www.overthewire.org/wargames
 
 bandit4@bandit.labs.overthewire.org's password: 
 
@@ -615,15 +435,6 @@ A program is running automatically at regular intervals from cron, the time-base
 ```
 ┌──(kali㉿kali)-[~]
 └─$ ssh bandit4@bandit.labs.overthewire.org -p 2220
-                         _                     _ _ _   
-                        | |__   __ _ _ __   __| (_) |_ 
-                        | '_ \ / _` | '_ \ / _` | | __|
-                        | |_) | (_| | | | | (_| | | |_ 
-                        |_.__/ \__,_|_| |_|\__,_|_|\__|
-                                                       
-
-                      This is an OverTheWire game server. 
-            More information on http://www.overthewire.org/wargames
 
 bandit4@bandit.labs.overthewire.org's password: 
 
@@ -637,15 +448,6 @@ NOTE: Looking at shell scripts written by other people is a very useful skill. T
 ```
 ┌──(kali㉿kali)-[~]
 └─$ ssh bandit4@bandit.labs.overthewire.org -p 2220
-                         _                     _ _ _   
-                        | |__   __ _ _ __   __| (_) |_ 
-                        | '_ \ / _` | '_ \ / _` | | __|
-                        | |_) | (_| | | | | (_| | | |_ 
-                        |_.__/ \__,_|_| |_|\__,_|_|\__|
-                                                       
-
-                      This is an OverTheWire game server. 
-            More information on http://www.overthewire.org/wargames
 
 bandit4@bandit.labs.overthewire.org's password: 
 
@@ -661,15 +463,6 @@ NOTE 2: Keep in mind that your shell script is removed once executed, so you may
 ```
 ┌──(kali㉿kali)-[~]
 └─$ ssh bandit4@bandit.labs.overthewire.org -p 2220
-                         _                     _ _ _   
-                        | |__   __ _ _ __   __| (_) |_ 
-                        | '_ \ / _` | '_ \ / _` | | __|
-                        | |_) | (_| | | | | (_| | | |_ 
-                        |_.__/ \__,_|_| |_|\__,_|_|\__|
-                                                       
-
-                      This is an OverTheWire game server. 
-            More information on http://www.overthewire.org/wargames
 
 bandit4@bandit.labs.overthewire.org's password: 
 
@@ -682,15 +475,6 @@ You do not need to create new connections each time
 ```
 ┌──(kali㉿kali)-[~]
 └─$ ssh bandit4@bandit.labs.overthewire.org -p 2220
-                         _                     _ _ _   
-                        | |__   __ _ _ __   __| (_) |_ 
-                        | '_ \ / _` | '_ \ / _` | | __|
-                        | |_) | (_| | | | | (_| | | |_ 
-                        |_.__/ \__,_|_| |_|\__,_|_|\__|
-                                                       
-
-                      This is an OverTheWire game server. 
-            More information on http://www.overthewire.org/wargames
 
 bandit4@bandit.labs.overthewire.org's password: 
 
@@ -702,15 +486,6 @@ Logging in to bandit26 from bandit25 should be fairly easy… The shell for user
 ```
 ┌──(kali㉿kali)-[~]
 └─$ ssh bandit4@bandit.labs.overthewire.org -p 2220
-                         _                     _ _ _   
-                        | |__   __ _ _ __   __| (_) |_ 
-                        | '_ \ / _` | '_ \ / _` | | __|
-                        | |_) | (_| | | | | (_| | | |_ 
-                        |_.__/ \__,_|_| |_|\__,_|_|\__|
-                                                       
-
-                      This is an OverTheWire game server. 
-            More information on http://www.overthewire.org/wargames
 
 bandit4@bandit.labs.overthewire.org's password: 
 
@@ -722,15 +497,6 @@ Good job getting a shell! Now hurry and grab the password for bandit27!
 ```
 ┌──(kali㉿kali)-[~]
 └─$ ssh bandit4@bandit.labs.overthewire.org -p 2220
-                         _                     _ _ _   
-                        | |__   __ _ _ __   __| (_) |_ 
-                        | '_ \ / _` | '_ \ / _` | | __|
-                        | |_) | (_| | | | | (_| | | |_ 
-                        |_.__/ \__,_|_| |_|\__,_|_|\__|
-                                                       
-
-                      This is an OverTheWire game server. 
-            More information on http://www.overthewire.org/wargames
 
 bandit4@bandit.labs.overthewire.org's password: 
 
@@ -742,15 +508,6 @@ There is a git repository at ssh://bandit27-git@localhost/home/bandit27-git/repo
 ```
 ┌──(kali㉿kali)-[~]
 └─$ ssh bandit4@bandit.labs.overthewire.org -p 2220
-                         _                     _ _ _   
-                        | |__   __ _ _ __   __| (_) |_ 
-                        | '_ \ / _` | '_ \ / _` | | __|
-                        | |_) | (_| | | | | (_| | | |_ 
-                        |_.__/ \__,_|_| |_|\__,_|_|\__|
-                                                       
-
-                      This is an OverTheWire game server. 
-            More information on http://www.overthewire.org/wargames
 
 bandit4@bandit.labs.overthewire.org's password: 
 
@@ -762,15 +519,6 @@ There is a git repository at ssh://bandit28-git@localhost/home/bandit28-git/repo
 ```
 ┌──(kali㉿kali)-[~]
 └─$ ssh bandit4@bandit.labs.overthewire.org -p 2220
-                         _                     _ _ _   
-                        | |__   __ _ _ __   __| (_) |_ 
-                        | '_ \ / _` | '_ \ / _` | | __|
-                        | |_) | (_| | | | | (_| | | |_ 
-                        |_.__/ \__,_|_| |_|\__,_|_|\__|
-                                                       
-
-                      This is an OverTheWire game server. 
-            More information on http://www.overthewire.org/wargames
 
 bandit4@bandit.labs.overthewire.org's password: 
 
@@ -782,15 +530,6 @@ There is a git repository at ssh://bandit29-git@localhost/home/bandit29-git/repo
 ```
 ┌──(kali㉿kali)-[~]
 └─$ ssh bandit4@bandit.labs.overthewire.org -p 2220
-                         _                     _ _ _   
-                        | |__   __ _ _ __   __| (_) |_ 
-                        | '_ \ / _` | '_ \ / _` | | __|
-                        | |_) | (_| | | | | (_| | | |_ 
-                        |_.__/ \__,_|_| |_|\__,_|_|\__|
-                                                       
-
-                      This is an OverTheWire game server. 
-            More information on http://www.overthewire.org/wargames
 
 bandit4@bandit.labs.overthewire.org's password: 
 
@@ -802,15 +541,6 @@ There is a git repository at ssh://bandit30-git@localhost/home/bandit30-git/repo
 ```
 ┌──(kali㉿kali)-[~]
 └─$ ssh bandit4@bandit.labs.overthewire.org -p 2220
-                         _                     _ _ _   
-                        | |__   __ _ _ __   __| (_) |_ 
-                        | '_ \ / _` | '_ \ / _` | | __|
-                        | |_) | (_| | | | | (_| | | |_ 
-                        |_.__/ \__,_|_| |_|\__,_|_|\__|
-                                                       
-
-                      This is an OverTheWire game server. 
-            More information on http://www.overthewire.org/wargames
 
 bandit4@bandit.labs.overthewire.org's password: 
 
@@ -822,15 +552,6 @@ There is a git repository at ssh://bandit31-git@localhost/home/bandit31-git/repo
 ```
 ┌──(kali㉿kali)-[~]
 └─$ ssh bandit4@bandit.labs.overthewire.org -p 2220
-                         _                     _ _ _   
-                        | |__   __ _ _ __   __| (_) |_ 
-                        | '_ \ / _` | '_ \ / _` | | __|
-                        | |_) | (_| | | | | (_| | | |_ 
-                        |_.__/ \__,_|_| |_|\__,_|_|\__|
-                                                       
-
-                      This is an OverTheWire game server. 
-            More information on http://www.overthewire.org/wargames
 
 bandit4@bandit.labs.overthewire.org's password: 
 
@@ -842,15 +563,6 @@ After all this git stuff its time for another escape. Good luck!
 ```
 ┌──(kali㉿kali)-[~]
 └─$ ssh bandit4@bandit.labs.overthewire.org -p 2220
-                         _                     _ _ _   
-                        | |__   __ _ _ __   __| (_) |_ 
-                        | '_ \ / _` | '_ \ / _` | | __|
-                        | |_) | (_| | | | | (_| | | |_ 
-                        |_.__/ \__,_|_| |_|\__,_|_|\__|
-                                                       
-
-                      This is an OverTheWire game server. 
-            More information on http://www.overthewire.org/wargames
 
 bandit4@bandit.labs.overthewire.org's password: 
 
@@ -862,15 +574,6 @@ At this moment, level 34 does not exist yet.
 ```
 ┌──(kali㉿kali)-[~]
 └─$ ssh bandit4@bandit.labs.overthewire.org -p 2220
-                         _                     _ _ _   
-                        | |__   __ _ _ __   __| (_) |_ 
-                        | '_ \ / _` | '_ \ / _` | | __|
-                        | |_) | (_| | | | | (_| | | |_ 
-                        |_.__/ \__,_|_| |_|\__,_|_|\__|
-                                                       
-
-                      This is an OverTheWire game server. 
-            More information on http://www.overthewire.org/wargames
 
 bandit4@bandit.labs.overthewire.org's password: 
 
