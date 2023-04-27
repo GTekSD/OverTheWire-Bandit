@@ -266,11 +266,7 @@ owned by group bandit6
 
 bandit6@bandit.labs.overthewire.org's password: P4L4vucdmLnm8I7Vl7jG1ApGSfjYKqJU
 
-bandit6@bandit:~$ find / -user bandit7 -group bandit6
-find: ‘/var/log’: Permission denied
-find: ‘/var/crash’: Permission denied
-find: ‘/var/tmp’: Permission denied
-find: ‘/var/lib/polkit-1’: Permission denied
+bandit6@bandit:~$ find / -user bandit7 -group bandit6 2>/dev/null
 /var/lib/dpkg/info/bandit7.password
 bandit6@bandit:~$ cat /var/lib/dpkg/info/bandit7.password
 z7WtoNQU2XfjmMtWA8u5rN4vzqu4v99S
