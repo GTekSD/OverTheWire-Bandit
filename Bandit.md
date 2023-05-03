@@ -398,6 +398,81 @@ The password for the next level is stored in the file data.txt, which is a hexdu
 
 bandit12@bandit.labs.overthewire.org's password: JVNBBFSmZwKKOP0XbFXOoW8chDz5yVRv
 
+bandit12@bandit:~$ ll
+total 24
+drwxr-xr-x  2 root     root     4096 Apr 23 18:04 ./
+drwxr-xr-x 70 root     root     4096 Apr 23 18:05 ../
+-rw-r--r--  1 root     root      220 Jan  6  2022 .bash_logout
+-rw-r--r--  1 root     root     3771 Jan  6  2022 .bashrc
+-rw-r-----  1 bandit13 bandit12 2642 Apr 23 18:04 data.txt
+-rw-r--r--  1 root     root      807 Jan  6  2022 .profile
+bandit12@bandit:~$ chmod 777 data.txt 
+chmod: changing permissions of 'data.txt': Operation not permitted
+bandit12@bandit:~$ mkdir /tmp/unzip_dat/
+bandit12@bandit:~$ cp data.txt /tmp/unzip_dat/
+bandit12@bandit:~$ cd /tmp/unzip_dat
+bandit12@bandit:/tmp/unzip_dat$ ll
+total 1164
+drwxrwxr-x    2 bandit12 bandit12    4096 May  3 12:05 ./
+drwxrwx-wt 1032 root     root     1179648 May  3 12:05 ../
+-rw-r-----    1 bandit12 bandit12    2642 May  3 12:05 data.txt
+bandit12@bandit:/tmp/unzip_dat$ 
+
+bandit12@bandit:/tmp/unzip_dat$ xxd -r data.txt data_xxd
+bandit12@bandit:/tmp/unzip_dat$ ls
+data.txt  data_xxd
+bandit12@bandit:/tmp/unzip_dat$ file data_xxd 
+data_xxd: gzip compressed data, was "data2.bin", last modified: Sun Apr 23 18:04:23 2023, max compression, from Unix, original size modulo 2^32 581
+bandit12@bandit:/tmp/unzip_dat$ mv data_xxd data.gz
+bandit12@bandit:/tmp/unzip_dat$ ls
+data.gz  data.txt
+bandit12@bandit:/tmp/unzip_dat$ gunzip data.gz 
+
+bandit12@bandit:/tmp/unzip_dat$ ls
+data  data.txt
+bandit12@bandit:/tmp/unzip_dat$ file data
+data: bzip2 compressed data, block size = 900k
+bandit12@bandit:/tmp/unzip_dat$ mv data data.bz2
+bandit12@bandit:/tmp/unzip_dat$ bzip2 -d data.bz2 
+
+bandit12@bandit:/tmp/unzip_dat$ ls
+data  data.txt
+bandit12@bandit:/tmp/unzip_dat$ file data
+data: gzip compressed data, was "data4.bin", last modified: Sun Apr 23 18:04:23 2023, max compression, from Unix, original size modulo 2^32 20480
+bandit12@bandit:/tmp/unzip_dat$ mv data data.gz
+bandit12@bandit:/tmp/unzip_dat$ gunzip data.gz 
+
+bandit12@bandit:/tmp/unzip_dat$ file data
+data: POSIX tar archive (GNU)
+bandit12@bandit:/tmp/unzip_dat$ tar -xvf data
+data5.bin
+bandit12@bandit:/tmp/unzip_dat$ file data5.bin 
+data5.bin: POSIX tar archive (GNU)
+bandit12@bandit:/tmp/unzip_dat$ tar -xvf data5.bin
+data6.bin
+
+bandit12@bandit:/tmp/unzip_dat$ file data6.bin 
+data6.bin: bzip2 compressed data, block size = 900k
+bandit12@bandit:/tmp/unzip_dat$ ls
+data5.bin  data6.bin  data.txt
+bandit12@bandit:/tmp/unzip_dat$ tar -xvjf data6.bin
+data8.bin
+bandit12@bandit:/tmp/unzip_dat$ file data8.bin 
+data8.bin: gzip compressed data, was "data9.bin", last modified: Sun Apr 23 18:04:23 2023, max compression, from Unix, original size modulo 2^32 49
+
+bandit12@bandit:/tmp/unzip_dat$ mv data8.bin data8.gz
+bandit12@bandit:/tmp/unzip_dat$ gunzip data8.gz 
+bandit12@bandit:/tmp/unzip_dat$ ls
+data5.bin  data6.bin  data8  data.txt  
+bandit12@bandit:/tmp/unzip_dat$ file data8
+data8: ASCII text
+bandit12@bandit:/tmp/unzip_dat$ cat data8
+The password is wbWdlBxEir4CaE8LaPhauuOo6pwRmrDw
+bandit12@bandit:/tmp/unzip_dat$ 
+bandit12@bandit:/tmp/unzip_dat$ exit
+logout
+Connection to bandit.labs.overthewire.org closed.
+  
 ```
 
 ## Bandit Level 13 → Level 14
@@ -407,7 +482,49 @@ The password for the next level is stored in /etc/bandit_pass/bandit14 and can o
 ┌──(kali㉿kali)-[~]
 └─$ ssh bandit13@bandit.labs.overthewire.org -p 2220
 
-bandit13@bandit.labs.overthewire.org's password: 
+bandit13@bandit.labs.overthewire.org's password: wbWdlBxEir4CaE8LaPhauuOo6pwRmrDw
+
+bandit13@bandit:~$ cat sshkey.private 
+-----BEGIN RSA PRIVATE KEY-----
+MIIEpAIBAAKCAQEAxkkOE83W2cOT7IWhFc9aPaaQmQDdgzuXCv+ppZHa++buSkN+
+gg0tcr7Fw8NLGa5+Uzec2rEg0WmeevB13AIoYp0MZyETq46t+jk9puNwZwIt9XgB
+ZufGtZEwWbFWw/vVLNwOXBe4UWStGRWzgPpEeSv5Tb1VjLZIBdGphTIK22Amz6Zb
+ThMsiMnyJafEwJ/T8PQO3myS91vUHEuoOMAzoUID4kN0MEZ3+XahyK0HJVq68KsV
+ObefXG1vvA3GAJ29kxJaqvRfgYnqZryWN7w3CHjNU4c/2Jkp+n8L0SnxaNA+WYA7
+jiPyTF0is8uzMlYQ4l1Lzh/8/MpvhCQF8r22dwIDAQABAoIBAQC6dWBjhyEOzjeA
+J3j/RWmap9M5zfJ/wb2bfidNpwbB8rsJ4sZIDZQ7XuIh4LfygoAQSS+bBw3RXvzE
+pvJt3SmU8hIDuLsCjL1VnBY5pY7Bju8g8aR/3FyjyNAqx/TLfzlLYfOu7i9Jet67
+xAh0tONG/u8FB5I3LAI2Vp6OviwvdWeC4nOxCthldpuPKNLA8rmMMVRTKQ+7T2VS
+nXmwYckKUcUgzoVSpiNZaS0zUDypdpy2+tRH3MQa5kqN1YKjvF8RC47woOYCktsD
+o3FFpGNFec9Taa3Msy+DfQQhHKZFKIL3bJDONtmrVvtYK40/yeU4aZ/HA2DQzwhe
+ol1AfiEhAoGBAOnVjosBkm7sblK+n4IEwPxs8sOmhPnTDUy5WGrpSCrXOmsVIBUf
+laL3ZGLx3xCIwtCnEucB9DvN2HZkupc/h6hTKUYLqXuyLD8njTrbRhLgbC9QrKrS
+M1F2fSTxVqPtZDlDMwjNR04xHA/fKh8bXXyTMqOHNJTHHNhbh3McdURjAoGBANkU
+1hqfnw7+aXncJ9bjysr1ZWbqOE5Nd8AFgfwaKuGTTVX2NsUQnCMWdOp+wFak40JH
+PKWkJNdBG+ex0H9JNQsTK3X5PBMAS8AfX0GrKeuwKWA6erytVTqjOfLYcdp5+z9s
+8DtVCxDuVsM+i4X8UqIGOlvGbtKEVokHPFXP1q/dAoGAcHg5YX7WEehCgCYTzpO+
+xysX8ScM2qS6xuZ3MqUWAxUWkh7NGZvhe0sGy9iOdANzwKw7mUUFViaCMR/t54W1
+GC83sOs3D7n5Mj8x3NdO8xFit7dT9a245TvaoYQ7KgmqpSg/ScKCw4c3eiLava+J
+3btnJeSIU+8ZXq9XjPRpKwUCgYA7z6LiOQKxNeXH3qHXcnHok855maUj5fJNpPbY
+iDkyZ8ySF8GlcFsky8Yw6fWCqfG3zDrohJ5l9JmEsBh7SadkwsZhvecQcS9t4vby
+9/8X4jS0P8ibfcKS4nBP+dT81kkkg5Z5MohXBORA7VWx+ACohcDEkprsQ+w32xeD
+qT1EvQKBgQDKm8ws2ByvSUVs9GjTilCajFqLJ0eVYzRPaY6f++Gv/UVfAPV4c+S0
+kAWpXbv5tbkkzbS0eaLPTKgLzavXtQoTtKwrjpolHKIHUz6Wu+n4abfAIRFubOdN
+/+aLoRQ0yBDRbdXMsZN/jvY44eM+xRLdRVyMmdPtP8belRi2E2aEzA==
+-----END RSA PRIVATE KEY-----
+bandit13@bandit:~$ ssh -i sshkey.private bandit14@localhost -p 2220
+The authenticity of host '[localhost]:2220 ([127.0.0.1]:2220)' can't be established.
+ED25519 key fingerprint is SHA256:C2ihUBV7ihnV1wUXRb4RrEcLfXC5CXlhmAAM/urerLY.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Could not create directory '/home/bandit13/.ssh' (Permission denied).
+Failed to add the host to the list of known hosts (/home/bandit13/.ssh/known_hosts).
+
+Welcome to OverTheWire!
+
+  Enjoy your stay!
+
+bandit14@bandit:~$ 
 
 ```
 
@@ -416,9 +533,9 @@ bandit13@bandit.labs.overthewire.org's password:
 The password for the next level can be retrieved by submitting the password of the current level to port 30000 on localhost.
 ```
 ┌──(kali㉿kali)-[~]
-└─$ ssh bandit14@bandit.labs.overthewire.org -p 2220
+└─$ bandit13@bandit:~$ ssh -i sshkey.private bandit14@localhost -p 2220
 
-bandit14@bandit.labs.overthewire.org's password: 
+bandit14@bandit:~$ 
 
 ```
 
