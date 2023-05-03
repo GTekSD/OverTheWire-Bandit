@@ -281,9 +281,17 @@ Connection to bandit.labs.overthewire.org closed.
 The password for the next level is stored in the file data.txt next to the word millionth
 ```
 ┌──(kali㉿kali)-[~]
-└─$ ssh bandit4@bandit.labs.overthewire.org -p 2220
+└─$ ssh bandit7@bandit.labs.overthewire.org -p 2220
 
-bandit4@bandit.labs.overthewire.org's password: z7WtoNQU2XfjmMtWA8u5rN4vzqu4v99S
+bandit7@bandit.labs.overthewire.org's password: z7WtoNQU2XfjmMtWA8u5rN4vzqu4v99S
+
+bandit7@bandit:~$ ls
+data.txt
+bandit7@bandit:~$ cat data.txt | grep millionth
+millionth       TESKZC0XvTetK0S9xNwm25STk5iWrBvP
+bandit7@bandit:~$ exit
+logout
+Connection to bandit.labs.overthewire.org closed.
 
 ```
 
@@ -292,10 +300,24 @@ bandit4@bandit.labs.overthewire.org's password: z7WtoNQU2XfjmMtWA8u5rN4vzqu4v99S
 The password for the next level is stored in the file data.txt and is the only line of text that occurs only once
 ```
 ┌──(kali㉿kali)-[~]
-└─$ ssh bandit4@bandit.labs.overthewire.org -p 2220
+└─$ ssh bandit8@bandit.labs.overthewire.org -p 2220
 
-bandit4@bandit.labs.overthewire.org's password: 
+bandit8@bandit.labs.overthewire.org's password: TESKZC0XvTetK0S9xNwm25STk5iWrBvP
 
+bandit8@bandit:~$ ls
+data.txt
+bandit8@bandit:~$ cat data.txt | wc -l
+1001
+bandit8@bandit:~$ cat data.txt | sort -u | wc -l
+101
+bandit8@bandit:~$ cat data.txt | sort | uniq -u | wc -l
+1
+bandit8@bandit:~$ cat data.txt | sort | uniq -u 
+EN632PlfYiZbn3PhVK3XOGSlNInNE00t
+bandit8@bandit:~$ exit
+logout
+Connection to bandit.labs.overthewire.org closed.
+ 
 ```
 
 ## Bandit Level 9  → Level 10
@@ -303,10 +325,31 @@ bandit4@bandit.labs.overthewire.org's password:
 The password for the next level is stored in the file data.txt in one of the few human-readable strings, preceded by several ‘=’ characters.
 ```
 ┌──(kali㉿kali)-[~]
-└─$ ssh bandit4@bandit.labs.overthewire.org -p 2220
+└─$ ssh bandit9@bandit.labs.overthewire.org -p 2220
 
-bandit4@bandit.labs.overthewire.org's password: 
+bandit9@bandit.labs.overthewire.org's password: EN632PlfYiZbn3PhVK3XOGSlNInNE00t
 
+bandit9@bandit:~$ cat data.txt | grep =
+grep: (standard input): binary file matches
+bandit9@bandit:~$ strings data.txt | grep =
+4========== the#
+5P=GnFE
+========== password
+'DN9=5
+========== is
+$Z=_
+=TU%
+=^,T,?
+W=y 
+q=W 
+X=K,
+========== G7w8LIi6J3kTb8A7j9LgrywtEUlyyp6s
+&S=(
+nd?=
+bandit9@bandit:~$ exit
+logout
+Connection to bandit.labs.overthewire.org closed.
+ 
 ```
 
 ## Bandit Level 10 → Level 11
@@ -314,10 +357,17 @@ bandit4@bandit.labs.overthewire.org's password:
 The password for the next level is stored in the file data.txt, which contains base64 encoded data
 ```
 ┌──(kali㉿kali)-[~]
-└─$ ssh bandit4@bandit.labs.overthewire.org -p 2220
+└─$ ssh bandit10@bandit.labs.overthewire.org -p 2220
 
-bandit4@bandit.labs.overthewire.org's password: 
+bandit10@bandit.labs.overthewire.org's password: G7w8LIi6J3kTb8A7j9LgrywtEUlyyp6s
 
+bandit10@bandit:~$ ls
+data.txt
+bandit10@bandit:~$ base64 -d data.txt 
+The password is 6zPeziLdR2RKNdNYFNb6nVCKzphlXHBM
+bandit10@bandit:~$ exit
+logout
+Connection to bandit.labs.overthewire.org closed.
 ```
 
 ## Bandit Level 11 → Level 12
@@ -325,9 +375,17 @@ bandit4@bandit.labs.overthewire.org's password:
 The password for the next level is stored in the file data.txt, where all lowercase (a-z) and uppercase (A-Z) letters have been rotated by 13 positions
 ```
 ┌──(kali㉿kali)-[~]
-└─$ ssh bandit4@bandit.labs.overthewire.org -p 2220
+└─$ ssh bandit11@bandit.labs.overthewire.org -p 2220
 
-bandit4@bandit.labs.overthewire.org's password: 
+bandit11@bandit.labs.overthewire.org's password: 6zPeziLdR2RKNdNYFNb6nVCKzphlXHBM
+
+bandit11@bandit:~$ ls
+data.txt
+bandit11@bandit:~$ cat data.txt | tr '[A-Za-z]' '[N-ZA-Mn-za-m]'
+The password is JVNBBFSmZwKKOP0XbFXOoW8chDz5yVRv
+bandit11@bandit:~$ exit
+logout
+Connection to bandit.labs.overthewire.org closed.
 
 ```
 
@@ -336,9 +394,9 @@ bandit4@bandit.labs.overthewire.org's password:
 The password for the next level is stored in the file data.txt, which is a hexdump of a file that has been repeatedly compressed. For this level it may be useful to create a directory under /tmp in which you can work using mkdir. For example: mkdir /tmp/myname123. Then copy the datafile using cp, and rename it using mv (read the manpages!)
 ```
 ┌──(kali㉿kali)-[~]
-└─$ ssh bandit4@bandit.labs.overthewire.org -p 2220
+└─$ ssh bandit12@bandit.labs.overthewire.org -p 2220
 
-bandit4@bandit.labs.overthewire.org's password: 
+bandit12@bandit.labs.overthewire.org's password: JVNBBFSmZwKKOP0XbFXOoW8chDz5yVRv
 
 ```
 
@@ -347,9 +405,9 @@ bandit4@bandit.labs.overthewire.org's password:
 The password for the next level is stored in /etc/bandit_pass/bandit14 and can only be read by user bandit14. For this level, you don’t get the next password, but you get a private SSH key that can be used to log into the next level. Note: localhost is a hostname that refers to the machine you are working on
 ```
 ┌──(kali㉿kali)-[~]
-└─$ ssh bandit4@bandit.labs.overthewire.org -p 2220
+└─$ ssh bandit13@bandit.labs.overthewire.org -p 2220
 
-bandit4@bandit.labs.overthewire.org's password: 
+bandit13@bandit.labs.overthewire.org's password: 
 
 ```
 
@@ -358,9 +416,9 @@ bandit4@bandit.labs.overthewire.org's password:
 The password for the next level can be retrieved by submitting the password of the current level to port 30000 on localhost.
 ```
 ┌──(kali㉿kali)-[~]
-└─$ ssh bandit4@bandit.labs.overthewire.org -p 2220
+└─$ ssh bandit14@bandit.labs.overthewire.org -p 2220
 
-bandit4@bandit.labs.overthewire.org's password: 
+bandit14@bandit.labs.overthewire.org's password: 
 
 ```
 
@@ -371,9 +429,9 @@ The password for the next level can be retrieved by submitting the password of t
 Helpful note: Getting “HEARTBEATING” and “Read R BLOCK”? Use -ign_eof and read the “CONNECTED COMMANDS” section in the manpage. Next to ‘R’ and ‘Q’, the ‘B’ command also works in this version of that command…
 ```
 ┌──(kali㉿kali)-[~]
-└─$ ssh bandit4@bandit.labs.overthewire.org -p 2220
+└─$ ssh bandit15@bandit.labs.overthewire.org -p 2220
 
-bandit4@bandit.labs.overthewire.org's password: 
+bandit15@bandit.labs.overthewire.org's password: 
 
 ```
 
@@ -382,9 +440,9 @@ bandit4@bandit.labs.overthewire.org's password:
 The credentials for the next level can be retrieved by submitting the password of the current level to a port on localhost in the range 31000 to 32000. First find out which of these ports have a server listening on them. Then find out which of those speak SSL and which don’t. There is only 1 server that will give the next credentials, the others will simply send back to you whatever you send to it.
 ```
 ┌──(kali㉿kali)-[~]
-└─$ ssh bandit4@bandit.labs.overthewire.org -p 2220
+└─$ ssh bandit16@bandit.labs.overthewire.org -p 2220
 
-bandit4@bandit.labs.overthewire.org's password: 
+bandit16@bandit.labs.overthewire.org's password: 
 
 ```
 
@@ -395,9 +453,9 @@ There are 2 files in the homedirectory: passwords.old and passwords.new. The pas
 NOTE: if you have solved this level and see ‘Byebye!’ when trying to log into bandit18, this is related to the next level, bandit19
 ```
 ┌──(kali㉿kali)-[~]
-└─$ ssh bandit4@bandit.labs.overthewire.org -p 2220
+└─$ ssh bandit17@bandit.labs.overthewire.org -p 2220
 
-bandit4@bandit.labs.overthewire.org's password: 
+bandit17@bandit.labs.overthewire.org's password: 
 
 ```
 
@@ -406,9 +464,9 @@ bandit4@bandit.labs.overthewire.org's password:
 The password for the next level is stored in a file readme in the homedirectory. Unfortunately, someone has modified .bashrc to log you out when you log in with SSH.
 ```
 ┌──(kali㉿kali)-[~]
-└─$ ssh bandit4@bandit.labs.overthewire.org -p 2220
+└─$ ssh bandit18@bandit.labs.overthewire.org -p 2220
 
-bandit4@bandit.labs.overthewire.org's password: 
+bandit18@bandit.labs.overthewire.org's password: 
 
 ```
 
@@ -417,9 +475,9 @@ bandit4@bandit.labs.overthewire.org's password:
 To gain access to the next level, you should use the setuid binary in the homedirectory. Execute it without arguments to find out how to use it. The password for this level can be found in the usual place (/etc/bandit_pass), after you have used the setuid binary.
 ```
 ┌──(kali㉿kali)-[~]
-└─$ ssh bandit4@bandit.labs.overthewire.org -p 2220
+└─$ ssh bandit19@bandit.labs.overthewire.org -p 2220
 
-bandit4@bandit.labs.overthewire.org's password: 
+bandit19@bandit.labs.overthewire.org's password: 
 
 ```
 
@@ -430,9 +488,9 @@ There is a setuid binary in the homedirectory that does the following: it makes 
 NOTE: Try connecting to your own network daemon to see if it works as you think
 ```
 ┌──(kali㉿kali)-[~]
-└─$ ssh bandit4@bandit.labs.overthewire.org -p 2220
+└─$ ssh bandit20@bandit.labs.overthewire.org -p 2220
 
-bandit4@bandit.labs.overthewire.org's password: 
+bandit20@bandit.labs.overthewire.org's password: 
 
 ```
 
